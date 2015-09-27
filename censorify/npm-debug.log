@@ -15,9 +15,9 @@
 6 silly cache add   type: 'directory' }
 7 error addLocal Could not install C:\GitRepoz\classwork\censorify
 8 verbose stack Error: Failed to parse json
-8 verbose stack Unexpected token ',' at 12:12
-8 verbose stack   	"censor",
-8 verbose stack   	        ^
+8 verbose stack Unexpected token '"' at 13:4
+8 verbose stack   	"words"
+8 verbose stack   	^
 8 verbose stack     at parseError (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:379:11)
 8 verbose stack     at parseJson (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:68:23)
 8 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:48:5
@@ -31,9 +31,9 @@
 14 error file C:\GitRepoz\classwork\censorify\package.json
 15 error code EJSONPARSE
 16 error Failed to parse json
-16 error Unexpected token ',' at 12:12
-16 error   	"censor",
-16 error   	        ^
+16 error Unexpected token '"' at 13:4
+16 error   	"words"
+16 error   	^
 17 error File: C:\GitRepoz\classwork\censorify\package.json
 18 error Failed to parse package.json data.
 18 error package.json must be actual JSON, not just JavaScript.

@@ -8,10 +8,10 @@
   	"type": "git",
   	"url": "http://github.com/gitterbert/classwork/tree/master/censorify"
   },
-  "keywords": {
-  	"censor"
+  "keywords": [
+  	"censor",
   	"words"
-  },
+  ],
   "dependencies": {},
   "engines": {
       "node": "*"
