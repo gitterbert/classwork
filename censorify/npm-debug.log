@@ -1,43 +1,93 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'pack' ]
+1 verbose cli   'publish' ]
 2 info using npm@2.14.4
 3 info using node@v4.1.1
-4 silly cache add args [ '.', null ]
-5 verbose cache add spec .
-6 silly cache add parsed spec Result {
-6 silly cache add   raw: '.',
-6 silly cache add   scope: null,
-6 silly cache add   name: null,
-6 silly cache add   rawSpec: '.',
-6 silly cache add   spec: 'C:\\GitRepoz\\classwork\\censorify',
-6 silly cache add   type: 'directory' }
-7 error addLocal Could not install C:\GitRepoz\classwork\censorify
-8 verbose stack Error: Failed to parse json
-8 verbose stack Unexpected token '"' at 13:4
-8 verbose stack   	"words"
-8 verbose stack   	^
-8 verbose stack     at parseError (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:379:11)
-8 verbose stack     at parseJson (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:68:23)
-8 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:48:5
-8 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:76:16
-8 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
-9 verbose cwd C:\GitRepoz\classwork\censorify
-10 error Windows_NT 6.1.7601
-11 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "pack"
-12 error node v4.1.1
-13 error npm  v2.14.4
-14 error file C:\GitRepoz\classwork\censorify\package.json
-15 error code EJSONPARSE
-16 error Failed to parse json
-16 error Unexpected token '"' at 13:4
-16 error   	"words"
-16 error   	^
-17 error File: C:\GitRepoz\classwork\censorify\package.json
-18 error Failed to parse package.json data.
-18 error package.json must be actual JSON, not just JavaScript.
-18 error
-18 error This is not a bug in npm.
-18 error Tell the package author to fix their package.json file. JSON.parse
-19 verbose exit [ 1, true ]
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\GitRepoz\\classwork\\censorify',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\bertmac\AppData\Roaming\npm-cache\censorify\0.1.1\package.tgz not in flight; packing
+9 verbose tar pack [ 'C:\\Users\\bertmac\\AppData\\Roaming\\npm-cache\\censorify\\0.1.1\\package.tgz',
+9 verbose tar pack   'C:\\GitRepoz\\classwork\\censorify' ]
+10 verbose tarball C:\Users\bertmac\AppData\Roaming\npm-cache\censorify\0.1.1\package.tgz
+11 verbose folder C:\GitRepoz\classwork\censorify
+12 info prepublish censorify@0.1.1
+13 verbose addLocalTarball adding from inside cache C:\Users\bertmac\AppData\Roaming\npm-cache\censorify\0.1.1\package.tgz
+14 silly cache afterAdd censorify@0.1.1
+15 verbose afterAdd C:\Users\bertmac\AppData\Roaming\npm-cache\censorify\0.1.1\package\package.json not in flight; writing
+16 verbose afterAdd C:\Users\bertmac\AppData\Roaming\npm-cache\censorify\0.1.1\package\package.json written
+17 silly publish { author: { name: 'Bert McLees' },
+17 silly publish   name: 'censorify',
+17 silly publish   version: '0.1.1',
+17 silly publish   description: 'Censors words out of text',
+17 silly publish   main: 'censortext',
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'http://github.com/gitterbert/classwork/tree/master/censorify' },
+17 silly publish   keywords: [ 'censor', 'words' ],
+17 silly publish   dependencies: {},
+17 silly publish   engines: { node: '*' },
+17 silly publish   readme: 'Do what I say, and do what I mean',
+17 silly publish   readmeFilename: 'readme.md',
+17 silly publish   _id: 'censorify@0.1.1',
+17 silly publish   scripts: {},
+17 silly publish   _shasum: '0578ccd7b321e992f07a121dfe91d89c3b7b80d4',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name censorify
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/censorify
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading C:\Users\bertmac\AppData\Roaming\npm-cache\censorify\0.1.1\package.tgz
+25 verbose request uri https://registry.npmjs.org/censorify
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 10:35:58 PM
+28 verbose request using bearer token for auth
+29 verbose request id 0319e993dbf41c4c
+30 http request PUT https://registry.npmjs.org/censorify
+31 http 403 https://registry.npmjs.org/censorify
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=60',
+32 verbose headers   'content-length': '101',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Sun, 27 Sep 2015 02:35:50 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-atl6229-ATL',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1443321349.438126,VS0,VE711' }
+33 verbose request invalidating C:\Users\bertmac\AppData\Roaming\npm-cache\registry.npmjs.org\censorify on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: You do not have permission to publish 'censorify'. Are you logged in as the correct user? : censorify
+35 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:263:12)
+35 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:251:14)
+35 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:171:14)
+35 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+35 verbose stack     at emitTwo (events.js:87:13)
+35 verbose stack     at Request.emit (events.js:172:7)
+35 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1073:14)
+35 verbose stack     at emitOne (events.js:82:20)
+35 verbose stack     at Request.emit (events.js:169:7)
+35 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1019:12)
+36 verbose statusCode 403
+37 verbose pkgid censorify
+38 verbose cwd C:\GitRepoz\classwork\censorify
+39 error Windows_NT 6.1.7601
+40 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+41 error node v4.1.1
+42 error npm  v2.14.4
+43 error code E403
+44 error You do not have permission to publish 'censorify'. Are you logged in as the correct user? : censorify
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
