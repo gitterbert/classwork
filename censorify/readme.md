@@ -1,1 +1,1 @@
-Do what I say, and do what I mean
+Do what I say, and do what I mean, and do it now!
