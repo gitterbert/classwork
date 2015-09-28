@@ -1,6 +1,6 @@
 {
   "author": "Bert McLees",
-  "name": "censorify",
+  "name": "censorify-rhmc",
   "version": "0.1.1",
   "description": "Censors words out of text",
   "main": "censortext",
