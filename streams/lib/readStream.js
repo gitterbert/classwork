@@ -4,7 +4,6 @@ var data = require('../data-sources/sourceData.json'),
 
 var ReadStream = function() {
   Readable.call(this, {objectMode: true});
-
   this.data = data;
   this.curIndex = 0;
 };
@@ -15,7 +14,6 @@ ReadStream.prototype._read = function() {
   if (this.curIndex === this.data.length) {
     return this.push(null);
   }
-
   var data = this.data[this.curIndex++];
   console.log('read             : ' + JSON.stringify(data));
   this.push(data);
