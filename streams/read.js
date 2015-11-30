@@ -1,7 +1,7 @@
 var ReadStream = require('./lib/readStream.js');
 var sleep = require('sleep');
 
-/**** non-flowing mode 
+/* non-flowing mode */
 
   console.log('starting read stream in non-flowing mode.')
   sleep.sleep(3);
@@ -23,8 +23,8 @@ var sleep = require('sleep');
     console.log('starting read stream in flowing mode.'); 
   });
 
-*****/
-/**** flowing mode *****/
+
+/* flowing mode 
 
    var rs2 = new ReadStream();
    var i = 0;
@@ -32,13 +32,13 @@ var sleep = require('sleep');
   sleep.sleep(5);
   rs2.on('data', function(record) {
     console.log('received         : ' + JSON.stringify(record));
-    /*console.log('pausing stream for 2 secs');*/
-    /*if (i==0) 
+    //console.log('pausing stream for 2 secs');
+    if (i==0) 
       {console.log('hold on a sec');
        sleep.sleep(5);
        i = 1;
-      }*/
-    
+      }
+	  
     rs2.pause();
     setTimeout(function() {
        console.log('ok, resuming stream');
@@ -48,4 +48,4 @@ var sleep = require('sleep');
   rs2.on('end', function() {
     console.log('done with read stream in flowing mode.\n');
   });
-
+*/

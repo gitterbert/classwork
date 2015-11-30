@@ -14,6 +14,7 @@ ReadStream.prototype._read = function() {
   if (this.curIndex === this.data.length) {
     return this.push(null);
   }
+  console.log('current index = ' + this.curIndex);
   var data = this.data[this.curIndex++];
   console.log('read             : ' + JSON.stringify(data));
   this.push(data);
