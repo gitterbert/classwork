@@ -8,7 +8,7 @@ g.greet().setLang('es').greet(true).log();
 $('#login').click(function() {
    
     // create a new 'Greetr' object (let's pretend we know the name from the login)
-    var loginGrtr = G$('John', 'Doe');
+    var loginGrtr = G$('Jack', 'Black');
     
      // hide the login on the screen
     $('#logindiv').hide();

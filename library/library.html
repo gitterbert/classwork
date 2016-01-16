@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>JavaScript Module Libary</title>
+<link rel="stylesheet" type="text/css" media="all" href="styles/styles.css" />
+</head>
+<body>
+
+<h1>Module Library</h1>
+
+<div id="message">Messages will appear here</div>
+
+<script src="modulelibrary.js"></script>
+<script>
+Lib.Output.Clear();
+Lib.Output.Write("This is my first message.");
+Lib.Output.$bozo("Well, well, this is my 2second message.");
+Lib.Output.SetColor("#A88");
+Lib.Output.$bozo("Module libaries are great!");
+// var x = Lib.Output.FormatMessage("test"); // this will fail
+// Lib.Output.$(x);
+</script>
+
+</body>
+</html>
